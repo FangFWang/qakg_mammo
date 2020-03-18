@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MammoQa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style type="text/css">
+        .container1{
+            text-align:center;
+        }
+        .container2{
+            text-align:center;
+        }
+        #title{
+            text-align:center;
+        }
+    </style>
+
+    <!--<div class="container" style="border-bottom: 0;">-->
+        <!---->
+    <!--</div>-->
+
+    </head>
+
+<body>
+    <h1 id="title">
+        <span>基于简单乳腺影像知识图谱的问答系统</span>
+    </h1>
+    <section id="getintouch" >
+        <div class="container1">
+            <div id="info">
+                <br>
+                改系统可以回答以下几类问题：
+                <font size="2">
+                <br>
+                皮肤钙化是哪种特征的表现？
+                <br>
+                钙化分布有哪些类型？
+                <br>
+                钙化弥散分布的具体表现？
+                    <br>
+                    <br>
+                    <pre>
+                    </pre>
+                </font>
+
+            </div>
+        </div>
+
+        <div class="container2">
+                <div id="main">
+                    <form id="name_form">
+                        <label><h2>请输入你的问题:</h2></label>
+                        <input id='input_box' type="text" name="question"/>
+                        <input type="submit" value="查询" />
+                        <br>
+                        <br>
+                    </form>
+                </div>
+
+                <div id="out">
+                </div>
+
+                <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+                <script type="text/javascript">
+                    $('#name_form').submit(function(e) {
+                            e.preventDefault();
+
+                            var data = {};
+                            var Form = this;
+
+                            $.each(this.elements, function(i, v) {
+                                var input = $(v);
+                                data[input.attr("name")] = input.val();
+                                delete data["undefined"];
+                            });
+
+                            $.ajax({
+                                type: 'POST',
+                                url: '/api/say_name',
+                                dataType: 'json',
+                                contentType: 'application/json; charset=utf-8',
+                                data: JSON.stringify(data),
+                                context: Form,
+                                success: function(callback) {
+                                    document.getElementById("out").innerHTML=callback.question;
+                                },
+                                error: function() {
+                                    $(this).html("error!");
+                                }
+                            });
+                        });
+                </script>
+
+        </div>
+
+
+    </section>
+</body>
+</html>

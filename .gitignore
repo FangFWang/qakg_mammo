@@ -1,0 +1,6 @@
+tdb_mammo2
+.idea
+*pyc
+*/*pyc
+KB_query/__pycache__
+venv

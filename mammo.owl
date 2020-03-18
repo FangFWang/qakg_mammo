@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tuixiang/ontologies/mammo#"
+     xml:base="http://www.semanticweb.org/tuixiang/ontologies/mammo"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mammo="http://www.semanticweb.org/tuixiang/ontologies/mammo#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#describe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#describe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#describe_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#describe_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#describe_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#include -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#include">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#include_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#include_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#include_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#具体描述 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#具体描述">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#征象说明 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#征象说明">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#特征说明 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征说明">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#描述 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#特征 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#不定形钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#不定形钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>不定形钙化:形态小而模糊,常无典型特征,弥漫分布常为良性表现,而成簇、区域、线样和叶段分布者需活检定性。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#不规则肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#不规则肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#低密度肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#低密度肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#分叶性肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#分叶性肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#含脂肪密度肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#含脂肪密度肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#圆形肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#圆形肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#圆形钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#圆形钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>(5)圆形钙化:多发者大小不一,通常直径&lt;1.0 mm,常位于腺泡中。直径I&gt;0.5 mm称为圆点状钙化,直径&lt;0.5 mm称为针尖状钙化</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#小分叶边缘 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#小分叶边缘">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘"/>
+        <具体描述>小分叶指病灶边缘呈小波浪状改变,小分叶边缘为常见的恶性征象。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#椭圆形肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#椭圆形肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#毛刺边缘 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#毛刺边缘">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘"/>
+        <具体描述>毛刺边缘是病灶边缘向外发出的放射状线影,长短不一,根部较粗。毛刺边缘为常见的恶性征象。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#浸润边缘 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#浸润边缘">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#环形钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#环形钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>环形钙化:壁厚度超过蛋壳样钙化,直径为1—10 mm,甚至更大。边缘光整呈圆形或卵圆形,中央为低密度或透亮。常见于脂肪坏死、积油囊肿和导管钙化。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#皮肤钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#皮肤钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>皮肤钙化:典型者呈小环状,中心呈透亮改变;可多个小环成簇分布。不典型者可借助切线投照予以鉴别。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#等密度肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#等密度肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#粗棒状钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#粗棒状钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>粗棒状钙化:直径通常&gt;1 mm,发生于导管腔内,其形态顺应导管腔,又称铸型钙化。可多节段沿导管走行方向排列,边缘清楚,偶可呈分支状或中央透亮改变。常见于分泌性病变(浆细胞性乳腺炎)。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#粗糙不均质钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#粗糙不均质钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>粗糙不均质钙化:钙化形态不规则,直径多&gt;0.5 mm,有聚集趋势者可能为恶性改变,也可出现在纤维化、纤维腺瘤和外伤后的乳腺中,需要结合其分布情况判断良、恶性。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#粗糙或爆米花样钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#粗糙或爆米花样钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>粗糙或爆米花样钙化:呈粗颗粒样或斑块样,钙化直径&gt;2~3 mm,为纤维腺瘤钙化的特征表现。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#线性或线样分支状钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#线性或线样分支状钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>线样或线样分支状钙化(恶性铸型钙化):呈纤细的短线(直线或曲线)断续沿导管走行方向排列的不规则境界模糊的钙化,粗细小于&lt;0.5 mm。其中部分钙化可境界清楚,提示导管癌导管内成分的充填。可呈线样、成簇、叶段及区域性分布,主要表现为多发的不规则短曲线状钙化称为蠕虫状钙化。高度恶性可能的钙化</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#细小多形性钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#细小多形性钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>细小多形性钙化:形态、大小不一,直径常&lt;0.5 mm。成簇或叶段分布。高度恶性可能的钙化</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#缝线钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#缝线钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>缝线钙化:钙质沉积在缝线材料上所致。典型者为弧线形、绳结样改变。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+        <include rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度"/>
+        <include rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态"/>
+        <include rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘"/>
+        <征象说明>肿块:指在2个不同投照位置均可见的占位性病变。描述以下特征:形态、边缘、密度</征象说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#低密度肿块"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#含脂肪密度肿块"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#等密度肿块"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#高密度肿块"/>
+        <include_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块"/>
+        <特征说明>乳腺影像的肿块密度表现</特征说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块形态">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#不规则肿块"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#分叶性肿块"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#圆形肿块"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#椭圆形肿块"/>
+        <include_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块"/>
+        <特征说明>乳腺影像的肿块形态表现</特征说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#小分叶边缘"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#毛刺边缘"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#浸润边缘"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#边缘模糊"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#边缘清晰"/>
+        <include_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块"/>
+        <特征说明>乳腺影像的肿块边缘表现</特征说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#营养不良钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#营养不良钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>营养不良性钙化:常见于放疗后或外伤后乳腺。钙化的形态不规则,粗大,直径&gt;0.5 mm,常见中心透亮改变。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#蛋壳样或边缘钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#蛋壳样或边缘钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <具体描述>蛋壳样或边缘钙化:环壁薄,直径常&lt;2 mm,为球形物表面沉积的钙化。脂肪坏死或囊肿壁钙化是常见的边缘钙化。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#血管钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#血管钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>血管钙化:呈断续双轨状钙化,与血管走行一致。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#边缘模糊 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#边缘模糊">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘"/>
+        <具体描述>边缘模糊指肿块轮廓可见,但边缘无法准确划分,通常为恶性征象,表明病变向周围侵袭,也可能是由邻近致密的纤维腺体组织遮掩原本边缘清楚的肿块所致。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#边缘清晰 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#边缘清晰">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块边缘"/>
+        <具体描述>边缘清晰指I&gt;75%的肿块边界与周围正常组织分界清晰、锐利,其余边缘被周围纤维腺体组织遮盖,常为良性征象</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙乳沉淀钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙乳沉淀钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <具体描述>(8)钙乳沉积钙化:呈直径1~3 mm的微小囊肿内钙质沉积,常为多发。其特点为因重力作用,不同投照方位表现为不同形式。在90。侧位图像上钙化显示最佳,因重力作用钙质沉积于微囊底部,呈凹面向上、凸面向下的新月形或弧形高密度钙化影。这些征象在常规内外斜位上也可显示。在头尾位上表现不典型,常呈圆形外周逐渐变淡边
+缘模糊的钙化,需仔细分辨。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+        <include rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布"/>
+        <include rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态"/>
+        <征象说明>钙化表现为高密度影,主要从形态和分布2个方面描述。</征象说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化区域分布"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化弥散分布"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化段性分布"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化簇状分布"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化线性分布"/>
+        <include_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化"/>
+        <特征说明>乳腺影像的钙化分布表现</特征说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化区域分布 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化区域分布">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布"/>
+        <具体描述>区域分布是指较大范围的分布(至少直径&gt;2 cm),常超过1个象限,不能用导管样分布来描述,此类分布的钙化需结合其形态来综合分析。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化弥散分布 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化弥散分布">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布"/>
+        <具体描述>散在或弥漫分布:点状和多形性钙化随机分布于全乳,为良性病变,常为双侧性。散在分布的细线或分支样钙化可为恶性。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化形态">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#不定形钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#圆形钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#环形钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#皮肤钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#粗棒状钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#粗糙不均质钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#粗糙或爆米花样钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#线性或线样分支状钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#细小多形性钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#缝线钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#营养不良钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#血管钙化"/>
+        <describe rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙乳沉淀钙化"/>
+        <include_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化"/>
+        <特征说明>乳腺影像的钙化形态表现</特征说明>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化段性分布 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化段性分布">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布"/>
+        <具体描述>叶段分布:呈楔形分布,尖端指向乳头,提示钙化沉积于1个大叶范围内,可能为多灶性乳腺癌。良性分泌性病变也会有叶段分布的钙化,但钙化形状呈良性特点。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化簇状分布 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化簇状分布">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布"/>
+        <具体描述>成簇分布:指至少有5枚钙化占据在1个较小的范围内(&lt;1 cm2),更多钙化成堆聚集,范围在2 cm直径范围内。良、恶性病变均可出现此表现。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化线性分布 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化线性分布">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#钙化分布"/>
+        <具体描述>线样分布:提示钙化沉积于单个导管及其小分支内,如表现为铸型钙化合并多数不定形点状钙化,多为恶性改变。边缘清楚的短条状或中空的短棒状钙化则可能是良性分泌性钙化。</具体描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tuixiang/ontologies/mammo#高密度肿块 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#高密度肿块">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+        <describe_by rdf:resource="http://www.semanticweb.org/tuixiang/ontologies/mammo#肿块密度"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#乳腺Ｘ线摄影征象"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#描述"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tuixiang/ontologies/mammo#特征"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
